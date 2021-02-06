@@ -8,4 +8,4 @@ Tutta la parte del codice è stata prodotta in autonomia,tuttavia ho preso spunt
 
 
 
-Per riprodurre i risultati sarà necessario scaricare il dataset https://ai.stanford.edu/~amaas//data/sentiment/ e rimpiazzare all'inizio del programma(modulo di load_files train e test set) la directory corrispondente a dove è stato salvato il file.
+Per riprodurre i risultati sarà necessario scaricare il dataset https://ai.stanford.edu/~amaas//data/sentiment/ e rimpiazzare all'inizio del main.py (modulo di load_files train e test set) la directory corrispondente a dove è stato salvato il file.
