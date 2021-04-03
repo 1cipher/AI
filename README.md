@@ -1,11 +1,10 @@
-ELABORATO PER ESAME FINALE DI INTELLIGENZA ARTIFICIALE
-AUTORE:Alessio Bonacchi
+# ELABORATO PER ESAME FINALE DI INTELLIGENZA ARTIFICIALE
 
-Tutta la parte del codice è stata prodotta in autonomia,tuttavia ho preso spunto da alcuni siti per la realizzazione di due passaggi secondari:
-1)https://stackoverflow.com/questions/57144762/cope-with-different-slicing-behaviour-in-scipy-sparse-and-numpy : per far fronte alla conversione di righe di una csr sparse matrix ad un array.
+## Obiettivo
+L'obiettivo del progetto è stato quello di implementare in python gli algoritmi per l’inferenza e per l’apprendimento con Naive Bayes come descritto in [*McCallum & Nigam 1998*](https://www.cs.cmu.edu/~knigam/papers/multinomial-aaaiws98.pdf),sia in versione Bernoulli che Multinomiale.Questo al fine di classificare il dataset di documenti [*Large Movie Review Dataset*](https://ai.stanford.edu/~amaas//data/sentiment/) e riportarne le matrici di confusione.
 
-2)LemmaTokenizer() function: presentata nell'ultima videolezione del corso.Ho tuttavia reimplementato, per interesse personale, tutto il meccanismo di text preprocessing(anche se ovviamente per motivi di efficienza non viene usato)
+## Come riprodurre i risultati
+Ho salvato tramite la funzione *savez_compressed* di *NumPy* tutte le matrici e vettori sparsi che rappresentano il dataset di train e test già processati con il Vectorizer di *sklearn* al fine di velocizzare il processo. \\\\
+Per riprodurre i risultati basterà infatti eseguire gli script *BernoulliClassification* e *MultinomialClassification* per verificare il corretto funzionamento della classificazione Naive Bayes in versione Bernoulli e Multinomiale,rispettivamente,sul dataset considerato
 
 
-
-Per riprodurre i risultati sarà necessario scaricare il dataset https://ai.stanford.edu/~amaas//data/sentiment/ e rimpiazzare all'inizio del main.py (modulo di load_files train e test set) la directory corrispondente a dove è stato salvato il file.
