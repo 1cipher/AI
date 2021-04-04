@@ -6,6 +6,6 @@ L'obiettivo del progetto è stato quello di implementare in python gli algoritmi
 ## Come riprodurre i risultati
 Ho salvato tramite la funzione *savez_compressed* di *NumPy* tutte le matrici e vettori sparsi che rappresentano il dataset di train e test già processati con il Vectorizer di *sklearn* al fine di velocizzare il processo. 
 
-Per riprodurre i risultati basterà infatti eseguire gli script *BernoulliClassification* e *MultinomialClassification* per verificare il corretto funzionamento della classificazione Naive Bayes in versione Bernoulli e Multinomiale,rispettivamente,sul dataset considerato
+Per riprodurre i risultati basterà infatti eseguire gli script [*BernoulliClassification*]() e [*MultinomialClassification*]() per verificare il corretto funzionamento della classificazione Naive Bayes in versione Bernoulli e Multinomiale,rispettivamente,sul dataset considerato
 
 
