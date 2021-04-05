@@ -57,15 +57,12 @@ class BernoulliClassifier():
         voc = self.trainvocabulary
         condprob = self.condProb
         condprob2 = self.condProb2
-        vocabularySet = set(range(0,len(self.trainvocabulary)))
 
         for i in range(dataset.shape[0]):
             score = [0 for i in range(len(self.Prior))]
             #apply posterior for each document and establish if it is more likely of class 0 or 1
             print('predicting ',i,' out of ',dataset.shape[0])
             selectedDocument = dataset[i].nonzero()
-            inset = set(list(selectedDocument[1]))
-            outset = vocabularySet-inset
 
             for word in selectedDocument[1]:
                 p0 = condprob2[0][word]
